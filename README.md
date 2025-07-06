@@ -2,7 +2,7 @@
 
 **Freedom in Code. Power in the Community.**
 
-This repository contains the official implementation of the SUDX protocol on the Solana blockchain.
+This repository contains the official implementation of the SUDX protocol, built on the **Polygon** blockchain using **Solidity** and the **Hardhat** development environment.
 
 ---
 
@@ -17,7 +17,7 @@ Open-source software moves the world. It is the foundation of the internet, arti
 ## The Solution
 
 Inspired by the `sudo` command in Linux, SUDX aims to become the native token of the open-source ecosystem, providing concrete tools:
-1.  **Direct & Transparent Donations:** Support your favorite projects with fast, auditable transactions on the Solana blockchain.
+1.  **Direct & Transparent Donations:** Support your favorite projects with fast, auditable transactions on the **Polygon** blockchain.
 2.  **Decentralized Governance (DAO):** The SUDX community will decide the future, collectively funding new tools, bug bounties, and initiatives.
 3.  **On-Chain Reputation:** Developers can earn rewards for their contributions, building a valued and immutable on-chain resume.
 4.  **Native Integration:** Our long-term vision is to integrate SUDX directly into the tools developers already use, like Git and CI/CD platforms.
