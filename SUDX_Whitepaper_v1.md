@@ -92,8 +92,9 @@ The total supply allocation is as follows:
 *   **Ecosystem Fund & Rewards (45%): 1,260,000,000 SUDX**
     *   **Purpose:** This is the largest allocation, intended to be governed by the DAO. The funds will be used to finance open-source projects, reward ecosystem contributors, fund bounties, and audit the security of new tools. It is the capital that will drive the core purpose of SUDX.
 
-*   **Liquidity Pool (25%): 700,000,000 SUDX**
-    *   **Purpose:** Essential for market health. These tokens will be paired with a stable asset (like USDT) on a decentralized exchange (DEX) to create the initial liquidity pool. This ensures that users can buy and sell SUDX efficiently from launch.
+*   **Liquidity Pool (~24.95%):** 698,524,836 SUDX
+    *   **Purpose:** Essential for market health. These tokens will be paired with a stable asset (like **USDC**) on a decentralized exchange (DEX) to create the initial liquidity pool. This ensures that users can buy and sell SUDX efficiently from launch.
+    *   **Note:** The original allocation was 700,000,000 SUDX. A total of 1,475,164 SUDX was used to cover the creation fee for the team's vesting contract on the UNCX Network.
 
 *   **Team & Founders (15%): 420,000,000 SUDX**
     *   **Purpose:** To reward the core team for the development, strategy, and launch of the project. These tokens are subject to a vesting schedule to ensure the alignment of interests with the long-term success of the project.
@@ -110,17 +111,16 @@ The total supply allocation is as follows:
 
 To ensure the stability of the project and protect the interests of the community, we will implement the following mechanisms:
 
-1.  **Liquidity Pool Locking (700M SUDX):**
-    *   The initial liquidity, crucial for token trading, will be locked in a smart contract.
-    *   **50% of Liquidity (350M SUDX):** Locked for **12 months**.
-    *   **50% of Liquidity (350M SUDX):** Locked for **6 months**.
-    *   **Objective:** This mechanism prevents the sudden removal of liquidity ("Rug Pull"), one of the most common risks in DeFi projects, demonstrating the team's commitment to market stability.
+1.  **Initial Liquidity Pool Locking:**
+    *   The entirety (100%) of the initial liquidity created at launch will be locked in a smart contract for a minimum of **6 months**.
+    *   **Objective:** This mechanism prevents the sudden removal of liquidity ("Rug Pull"), one of the most common risks in DeFi projects, demonstrating the team's long-term commitment to market stability. The liquidity depth will be progressively increased via DAO governance as the project matures.
 
 2.  **Team Token Vesting (420M SUDX):**
     *   The tokens allocated to the team will not be released immediately. They will follow a vesting schedule.
     *   **Cliff Period:** No tokens will be released in the first **12 months** after launch.
     *   **Linear Release Period:** After the cliff, the tokens will be distributed in equal monthly installments over **24 months (2 years)**.
     *   **Objective:** This schedule ensures that the founding team is fully incentivized to work for the long-term success of the project, preventing a massive token sale that could destabilize the price.
+    *   **Status (2025-07-09):** ✅ **Completed.** The full amount has been locked in a 3-year vesting contract on the UNCX Network. The vesting contract can be publicly verified [here](https://app.uncx.network/lockers/token/chain/137/address/0xc56f971934961267586e8283c06018167f0d0e4c).
 
 ### 4.2. Hypothetical Growth Scenarios for Investors
 
@@ -157,7 +157,8 @@ The SUDX project has migrated from Solana to **Polygon**. This decision was made
     *   ✅ Smart contract for the token (SUDXToken.sol) written on Polygon
     *   ✅ Unit tests for the contract implemented and passed
     *   ✅ Deployment script (`deploy.ts`) created
-    *   ✅ **Contract deployed to the Polygon Testnet (Amoy)**
+    *   ✅ Contract deployed to the Polygon Testnet (Amoy)
+    *   ✅ **Contract deployed to the Polygon Mainnet**
     *   ⏳ Whitepaper v1 launch (focused on Polygon)
     *   ⏳ Creation and locking of the Liquidity Pool on a Polygon DEX (e.g., QuickSwap/Uniswap)
 
@@ -182,24 +183,24 @@ The SUDX project has migrated from Solana to **Polygon**. This decision was made
 SUDX is built by the community, for the community. Connect, contribute ideas, and help shape the future of open source.
 
 *   [Telegram](https://t.me/+aWeTCUiItxk4OWZh)
-*   [X (Twitter)](https://x.com/SudxO87323)
-*   [Reddit](https://www.reddit.com/r/SUDX_Official)
+*   [X (Twitter)](https://x.com/SudxOfficial)
+*   [Reddit](https://www.reddit.com/r/SudxLabs/)
 *   [GitHub](https://github.com/Sudx)
-*   [Contract Address on PolygonScan]
+*   [Contract Address on PolygonScan](https://polygonscan.com/token/0xc56F971934961267586e8283C06018167F0D0E4C)
 
 ---
 ## APPENDIX: TECHNICAL DETAILS
 
-*   **Network:** Polygon
+*   **Network:** Polygon Mainnet
 *   **Ticker:** SUDX
-*   **Status:** Deployed on Testnet
+*   **Status:** Deployed on Mainnet
 
 ---
-### Important Addresses (Polygon Testnet - Amoy)
+### Important Addresses (Polygon Mainnet)
 
-*   **Token Contract Address (SUDX):** `0xBD8F172873C11479Fba0b321c635B4c1659809f0`
-*   **Deployer Wallet (your test wallet):** `TO BE ADDED`
-*   **Quote Token (USDT):** Polygon Testnet default address
+*   **Token Contract Address (SUDX):** `0xc56F971934961267586e8283C06018167F0D0E4C`
+*   **Deployer Wallet:** The address of the wallet used for deployment.
+*   **Quote Token (USDC):** `0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359` (Official USDC on Polygon)
 
 ---
 ### Decision History

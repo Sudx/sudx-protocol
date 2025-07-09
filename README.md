@@ -34,12 +34,11 @@ Inspired by the `sudo` command in Linux, SUDX provides concrete tools:
 
 ## Project Status
 
-*   **Network:** Polygon
-*   **Current Stage:** Preparing for Mainnet Launch.
-*   **Testnet Contract (Amoy):** `0xBD8F172873C11479Fba0b321c635B4c1659809f0`
-*   **Mainnet Contract:** `To be deployed`
+*   **Network:** Polygon Mainnet
+*   **Current Stage:** Deployed
+*   **Mainnet Contract:** `0xc56F971934961267586e8283C06018167F0D0E4C`
 
-The core token contract has been successfully developed, tested, and validated on the Polygon Amoy testnet. The governance model using Aragon has also been successfully tested, proving the viability of our automated, on-chain execution of proposals.
+The core token contract has been successfully deployed to the Polygon Mainnet. The next steps involve locking team tokens and creating the initial liquidity pool.
 
 ---
 
