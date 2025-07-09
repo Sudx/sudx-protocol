@@ -45,27 +45,35 @@ SUDX is more than a token. It is an ecosystem designed to empower the world of f
 
 The heart of the SUDX ecosystem is its Decentralized Autonomous Organization (DAO). The DAO transfers decision-making power from a centralized entity to SUDX token holders, ensuring that the protocol's development and resource allocation align with the community's interests.
 
-### 3.1. Governance Model
+### 3.1. Governance Model and Platform
 
-Governance will be implemented using an industry-standard platform like **Snapshot.org**. This approach offers an intuitive, text-based user interface, removing language barriers and enabling global participation. Voting is recorded on-chain (or off-chain with on-chain verification), ensuring a transparent and auditable process.
+Governance will be implemented using the **Aragon** platform, one of the most robust and secure frameworks for creating on-chain, autonomous organizations. The key advantage of this choice is **automated execution**: proposals that are approved by the community are executed automatically by the DAO's smart contracts. This removes any reliance on a core team to manually transfer funds or enact decisions, ensuring a truly decentralized and trust-minimized process.
 
-### 3.2. The Proposal and Funding Cycle
+### 3.2. Two-Layer Treasury Management
 
-The DAO's primary mechanism is the funding of open-source projects and ecosystem initiatives. The process is structured to be transparent and secure:
+To maximize security and ensure long-term sustainability, the SUDX treasury is managed through a two-layer system:
 
-1.  **Proposal Submission:** An individual or project team submits a detailed proposal on a public SUDX community forum (e.g., Forum, Reddit). The proposal must include, at a minimum:
-    *   A description of the project or initiative.
-    *   The amount of funding requested in SUDX.
-    *   A Polygon wallet address for receiving the funds.
-    *   Goals and a development timeline.
+1.  **The Operational Treasury:** Housed directly within the Aragon DAO smart contracts, this treasury holds a smaller, operational budget. It is used for day-to-day funding approved by the DAO, such as grants, bounties, and operational costs. It is funded in tranches.
+2.  **The Community Strategic Treasury:** The vast majority of the Ecosystem Fund is held in a separate, community-owned Safe (multisig wallet). This acts as a strategic reserve. Replenishing the Operational Treasury from this reserve requires a formal DAO vote, creating a secure check-and-balance system for managing the protocol's core funds.
 
-2.  **Formal Proposal Creation:** Any community member who meets a minimum SUDX token requirement can create a formal proposal on the DAO platform, transcribing the details of the request.
+### 3.3. The Proposal and Funding Cycle
 
-3.  **Voting Period:** The proposal is opened for a fixed voting period (e.g., 7 days). Each participant's voting power is weighted by the amount of SUDX tokens they hold at the time the vote is initiated ("snapshot").
+The process for funding initiatives is designed to be transparent and community-driven:
 
-4.  **Proposal Execution:** If the proposal reaches the minimum quorum and a majority of "For" votes, it is approved. Execution is handled by a DAO Treasury smart contract, which will autonomously and programmatically transfer the funds to the proposer's wallet. This process eliminates the need for intermediaries and ensures that funds are allocated strictly according to the community's decision.
+1.  **Proposal Submission:** An individual or project team submits a detailed proposal on a public SUDX community forum.
+2.  **Formal Proposal Creation:** Any community member can create a formal proposal on the Aragon DAO platform, transcribing the request's details.
+3.  **Voting Period:** The proposal is opened for a fixed voting period (e.g., 7 days). Voting power is proportional to the amount of SUDX tokens held.
+4.  **Automated Execution:** If the proposal is approved, the DAO's smart contract **automatically executes the payment** from the **Operational Treasury** to the proposer's wallet. The process is fully auditable on-chain.
 
-### 3.3. Transparency and Auditability
+### 3.4. The Path to Full Decentralization
+
+A core principle of SUDX is to progressively eliminate central points of control. The path to full autonomy is clear and committed:
+
+1.  **Initial Admin Role:** Upon creation, the founding team's wallet will hold an initial administrative role to set up the DAO's initial parameters.
+2.  **Renouncing Admin Privileges:** One of the very first governance proposals will be to **transfer all administrative powers to the DAO's own governance contract**.
+3.  **Irreversible Autonomy:** Once this proposal is executed, no single entity or small group will be able to change the DAO's rules. All future changes, including managing the treasury or upgrading the protocol, will require a full community vote. This act makes the DAO truly sovereign and realizes the vision of a protocol governed by its users.
+
+### 3.5. Transparency and Auditability
 
 Both token ownership and voting history are public data, permanently recorded and verifiable on block explorers like **PolygonScan**. This ensures a maximum level of transparency regarding the distribution of voting power and the flow of treasury funds.
 
@@ -85,7 +93,7 @@ The total supply allocation is as follows:
     *   **Purpose:** This is the largest allocation, intended to be governed by the DAO. The funds will be used to finance open-source projects, reward ecosystem contributors, fund bounties, and audit the security of new tools. It is the capital that will drive the core purpose of SUDX.
 
 *   **Liquidity Pool (25%): 700,000,000 SUDX**
-    *   **Purpose:** Essential for market health. These tokens will be paired with a stable asset (like USDC) on a decentralized exchange (DEX) to create the initial liquidity pool. This ensures that users can buy and sell SUDX efficiently from launch.
+    *   **Purpose:** Essential for market health. These tokens will be paired with a stable asset (like USDT) on a decentralized exchange (DEX) to create the initial liquidity pool. This ensures that users can buy and sell SUDX efficiently from launch.
 
 *   **Team & Founders (15%): 420,000,000 SUDX**
     *   **Purpose:** To reward the core team for the development, strategy, and launch of the project. These tokens are subject to a vesting schedule to ensure the alignment of interests with the long-term success of the project.
@@ -191,7 +199,7 @@ SUDX is built by the community, for the community. Connect, contribute ideas, an
 
 *   **Token Contract Address (SUDX):** `0xBD8F172873C11479Fba0b321c635B4c1659809f0`
 *   **Deployer Wallet (your test wallet):** `TO BE ADDED`
-*   **Quote Token (USDC):** Polygon Testnet default address
+*   **Quote Token (USDT):** Polygon Testnet default address
 
 ---
 ### Decision History
@@ -201,14 +209,19 @@ SUDX is built by the community, for the community. Connect, contribute ideas, an
 ---
 ### Technical Development History (2025-07-06)
 
-*   **Objective:** Establish the technical foundation of the protocol on Polygon and deploy the token to a test network.
+*   **Objective:** Establish the technical foundation of the protocol on Polygon, deploy the token, and create a functional test market.
 *   **Steps Executed:**
     1.  **Documentation Alignment:** The `README.md` and the website were updated to reflect the migration to Polygon.
     2.  **Environment Setup:** A development environment was set up with Node.js and Hardhat.
     3.  **Contract Creation:** Development of `SUDXToken.sol`, a standard ERC20 contract.
     4.  **Verification and Testing:** The contract was compiled and passed unit tests that validated its core functionality.
-    5.  **Deployment Preparation:** A deployment script was created, and keys were securely configured via a `.env` file.
-    6.  **Testnet Deployment:** The SUDX token contract was successfully deployed to the Amoy testnet on Polygon.
+    5.  **Testnet Deployment:** The SUDX token contract was successfully deployed to the Amoy testnet on Polygon.
+    6.  **Proprietary DEX Deployment:** To ensure a robust and controlled testing environment, we deployed our own instance of the `UniswapV2Factory` and `UniswapV2Router02` contracts to the Amoy testnet.
+    7.  **Test Token Creation:** We deployed a `MockUSDC` token to serve as a stable liquidity pair.
+    8.  **Liquidity Pool Creation:** We successfully created a SUDX/MockUSDC liquidity pool on our test DEX, completing the proof of concept for the market infrastructure.
 *   **Challenges Encountered and Solutions:**
     *   **Dependency Conflicts and Configuration Errors:** We overcame multiple technical challenges related to `npm` dependencies and TypeScript/Hardhat configurations, which were resolved by installing the correct packages and manually creating configuration files.
+    *   **Lack of Testnet Infrastructure:** The Amoy network lacked a reliable, public Uniswap/QuickSwap router. **Solution:** We decided to deploy our own instance of the Uniswap V2 contracts, which gave us full control and a more secure testing environment.
+    *   **Insufficient Funds (Gas):** The cost of deploying contracts depleted the test funds (MATIC) from the wallet. **Solution:** We used multiple faucets and wallets to acquire sufficient test MATIC for the transactions.
+    *   **Pool Creation Failures (`TRANSFER_FROM_FAILED`):** The initial pool creation failed. Investigation revealed that the approval transactions (`approve`) needed to be confirmed on the blockchain before calling `addLiquidity`. **Solution:** We modified the script to wait (`await tx.wait()`) for each approval's confirmation, which resolved the issue.
 ---
