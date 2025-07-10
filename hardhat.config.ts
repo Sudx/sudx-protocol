@@ -23,6 +23,11 @@ if (!privateKey) {
   throw new Error("PRIVATE_KEY not found in .env file");
 }
 
+const polygonscanApiKey = process.env.POLYGONSCAN_API_KEY;
+if (!polygonscanApiKey) {
+  throw new Error("POLYGONSCAN_API_KEY not found in .env file");
+}
+
 const config: HardhatUserConfig = {
   solidity: "0.8.24",
   networks: {
@@ -38,6 +43,9 @@ const config: HardhatUserConfig = {
       url: polygonMainnetRpcUrl,
       accounts: [privateKey],
     },
+  },
+  etherscan: {
+    apiKey: polygonscanApiKey,
   },
 };
 
