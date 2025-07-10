@@ -35,8 +35,9 @@ Inspired by the `sudo` command in Linux, SUDX provides concrete tools:
 ## Project Status
 
 *   **Network:** Polygon Mainnet
-*   **Current Stage:** Deployed
+*   **Current Stage:** Deployed & DAO Live
 *   **Mainnet Contract:** `0xc56F971934961267586e8283C06018167F0D0E4C`
+*   **DAO Address:** `0xA5dEa0A7E9c47d52e735c1d4129Cc02a54966E21`
 
 The core token contract has been successfully deployed to the Polygon Mainnet. The next steps involve locking team tokens and creating the initial liquidity pool.
 
