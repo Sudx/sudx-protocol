@@ -77,6 +77,12 @@ A core principle of SUDX is to progressively eliminate central points of control
 
 Both token ownership and voting history are public data, permanently recorded and verifiable on block explorers like **PolygonScan**. This ensures a maximum level of transparency regarding the distribution of voting power and the flow of treasury funds.
 
+### 3.6. DAO Dashboard
+
+Our DAO is live on the Aragon platform. All governance activities, including active proposals, treasury status, and member participation, can be viewed publicly on our official dashboard:
+
+*   **[SUDX DAO Dashboard on Aragon](https://app.aragon.org/dao/polygon-mainnet/0xA5dEa0A7E9c47d52e735c1d4129Cc02a54966E21/dashboard)**
+
 ---
 
 ## 4. Tokenomics
