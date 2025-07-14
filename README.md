@@ -95,7 +95,7 @@ npx hardhat test
 ## Get Involved
 
 *   **X (Twitter):** https://x.com/SudxOfficial
-*   **Telegram:** https://t.me/+aWeTCUiItxk4OWZh
+*   **Telegram:** https://t.me/+WsyTH_KiBDxjNzBh
 *   **Reddit:** https://www.reddit.com/r/SudxLabs/
 *   **GitHub:** https://github.com/Sudx
 
