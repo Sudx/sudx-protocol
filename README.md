@@ -36,8 +36,11 @@ Inspired by the `sudo` command in Linux, SUDX provides concrete tools:
 
 *   **Network:** Polygon Mainnet
 *   **Current Stage:** Deployed, DAO Live & Liquidity Locked
+
+### Key Addresses
+
 *   **Mainnet Contract:** [`0xc56F971934961267586e8283C06018167F0D0E4C`](https://polygonscan.com/token/0xc56F971934961267586e8283C06018167F0D0E4C)
-*   **DAO Address:** [`0xA5dEa0A7E9c47d52e735c1d4129Cc02a54966E21`](https://app.aragon.org/dao/polygon-mainnet/0xA5dEa0A7E9c47d52e735c1d4129Cc02a54966E21/dashboard)
+*   **DAO Treasury:** [`0xA5dEa0A7E9c47d52e735c1d4129Cc02a54966E21`](https://app.aragon.org/dao/polygon-mainnet/0xA5dEa0A7E9c47d52e735c1d4129Cc02a54966E21/dashboard)
 *   **Team Vesting Proof:** [View on UNCX](https://app.uncx.network/lockers/token/chain/137/address/0xc56f971934961267586e8283c06018167f0d0e4c)
 *   **Liquidity Lock Proof:** [View on UNCX](https://app.uncx.network/lockers/univ2/chain/137/address/0x884c355bdd0332abbbf3bf7ca3f68029ae500030)
 
